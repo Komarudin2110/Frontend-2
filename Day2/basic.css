@@ -1,0 +1,21 @@
+body {
+  background-size: contain;
+  background-image: url(/Day1/Files/pictures/kitty.jpg);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+#test {
+  color: blue;
+}
+
+h2 {
+  color: #abcdef;
+}
