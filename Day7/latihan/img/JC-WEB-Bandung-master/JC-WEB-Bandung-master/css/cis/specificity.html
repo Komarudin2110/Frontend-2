@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Specificity</title>
+
+        <style>
+            #something {
+                font-family: Helvetica, sans-serif;
+                color: cadetblue;
+                font-size: 30px;
+            }
+
+            .good {
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(194, 35, 226);
+                font-size: 16px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Specificity</h1>
+
+        <p id='something' class="good" style="color:darkmagenta">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+    </body>
+</html>

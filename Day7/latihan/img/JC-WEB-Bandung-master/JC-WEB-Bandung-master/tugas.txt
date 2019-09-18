@@ -1,0 +1,9 @@
+1. Review
+
+2. Gunakan tag img pada file dibawah ini :
+    - index.html
+    - indexes.html
+    - library.html
+    - Contact.html
+    - Something.html
+    - Info.html

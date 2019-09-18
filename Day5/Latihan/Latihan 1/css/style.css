@@ -1,0 +1,34 @@
+div.wrapper {
+    margin: 13px;
+}
+
+/* Untuk tag table, th, dan td akan memiliki border */
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 10px auto;
+}
+
+/* Tag table yang memiliki class table-wrap */
+table.table-wrap {
+    margin-bottom: 20px;
+}
+
+/* Tag table yang memiliki class table-data */
+table.table-data {
+    text-align: center;
+    margin: 15px;
+}
+
+th {
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

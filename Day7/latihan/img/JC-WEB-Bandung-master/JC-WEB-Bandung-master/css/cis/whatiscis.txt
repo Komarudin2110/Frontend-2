@@ -1,0 +1,41 @@
+Cascade
+    Ada paling tidak 3 jenis style yang dapat digunakan untuk menulis CSS, antara lain:
+    
+    1. Inline style
+    2. External Style dan Internal Style
+
+    Penulisan di atas di urutkan berdasarkan prioritas, External dan Internal memiliki prioritas yang
+    sama. Ketika memiliki priotitas yang sama maka akan menerapkan 'Last rules apply' yaitu yang 
+    terakhir kali di definisikan.
+
+    Jika pada style yang sama, men-select element yang sama, maka 'Last rules apply' akan di terapkan
+
+Inheritance
+    Suatu style pada suatu element itu dapat di turunkan terhadap element lain yang menjadi sebuah child.
+    Tidak semua style dapat di turunkan.
+
+    style pada child akan memiliki prioritas yang lebih dari pada parent
+
+    <div>
+        <p></p>
+    </div>
+
+    style yang di terapkan ke tag 'p' akan lebih kuat di banding yang di 'div'
+
+    style umum yang dapat di turunkan antara lain:
+
+        - color
+        - font
+        - background
+
+    style umum yang tidak dapat di turunkan antara lain:
+
+        - border
+        - width
+        - margin
+
+
+Specificity
+    Setiap selector memiliki nilai yang berbeda, yang akan menentukan selector mana yang di terapkan
+
+    di lihat gambar yang dikirim, nilai Specificity yang paling besar yang akan di terapkan

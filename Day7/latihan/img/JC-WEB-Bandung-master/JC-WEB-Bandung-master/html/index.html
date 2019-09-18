@@ -1,0 +1,182 @@
+<!-- Memberi tahu browser versi html yang kita gunakan, html versi 5 -->
+<!DOCTYPE html>
+<!-- TAG html -->
+<html>
+  <!-- tag head -->
+
+  <head>
+    <!-- menulis informasi tentag website yang kita buat -->
+    <title>JC-1 Bandung</title>
+  </head>
+
+  <!-- tag body -->
+
+  <body>
+        <!-- konten yang ingin di tampilkan -->
+
+        <!-- Header -->
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5</h5>
+        <h6>Header 6</h6>
+
+        <!-- paragraf -->
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nulla at possimus hic ab eligendi suscipit expedita dicta sapiente architecto! Asperiores modi eligendi laboriosam nulla, aliquid id dicta error blanditiis!
+        </p>
+        <!-- br untuk memberik space break -->
+            <br>
+            <br>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nulla at possimus hic ab eligendi suscipit expedita dicta sapiente architecto! Asperiores modi eligendi laboriosam nulla, aliquid id dicta error blanditiis!
+        </p>
+        <!-- hr untuk membuat horizontal line -->
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nulla at possimus hic ab eligendi suscipit expedita dicta sapiente architecto! Asperiores modi eligendi laboriosam nulla, aliquid id dicta error blanditiis!
+        </p>
+
+
+        <!-- ordered list -->
+        <!-- 
+            type, mengatur tipe urutan
+            - A / a
+            - i / I
+            - 1 (default)
+         -->
+        <ol type='I'>
+            <li>List pertama</li>
+            <li>List kedua</li>
+            <li>List ketiga</li>
+            <li>List keempat</li>
+            <li>List kelima</li>
+        </ol>
+
+        <!-- un-ordered list -->
+        <!-- type: square, circle, disk (default) -->
+        <div style='display: table; margin: 0 auto'>
+            <ul type='circle'>
+                <li>List pertama</li>
+                <li>List kedua</li>
+                <li>List ketiga</li>
+                <li>List keempat</li>
+                <li>List kelima</li>
+            </ul>
+        </div>
+
+
+        <!-- Anchor Tag (link) -->
+        <!-- 
+            / -> akan mengarah ke root folder
+
+            root folder adalah folder terluar dari folder project
+        -->
+        <!-- ./ command dimana dia mencari file di folder tersebut-->
+        <!-- ../ -> untuk keluar satu folder -->
+        <!-- 
+            href, style , .. = attribute
+         -->
+        
+
+        <!-- Absolute Link -->
+        <a href="https://www.google.com/"> Google </a>
+        <br>
+
+        <!-- Relative Link -->
+        <a href="./files/about.html">About me</a>
+       <hr>
+
+       <!-- 
+           dari folder root ( / )
+           masuk ke files
+           masuk ke document
+           akses ke library.html
+        -->
+        <a href="/files/document/library.html">Library</a>
+        <hr>
+
+        <!-- 
+           dari folder root ( / )
+           masuk ke files
+           akses info.html
+        -->
+        <a href="./files/info.html">Info Page</a>
+        <hr>
+
+
+        <!-- self closing tag -->
+
+        <!-- alt (alternative) : teks yang akan muncul jika source gambar tidak dapat di akses -->
+        <img src="https://www.bhg.com.au/media/9019/170113-introducing-new-kitten.jpg?width=640" alt="Orange kitten">
+        <br>
+
+        <figure>
+            <img src="/files/pictures/kitty.jpg" alt="Gambar_Kitty">
+            <figcaption>Kitty.jpg</figcaption>
+        </figure>
+
+
+        <!-- dropdown -->
+        <select>
+            <option value="">Kelabu</option>
+            <option value="">Merah</option>
+            <option value="">Hijau</option>
+            <option value="">Kuning</option>
+            <option value="">Hitam</option>
+            <option value="">Putih</option>
+            <option value="">Merah Muda</option>
+        </select>
+
+        <!-- option group -->
+        <select>
+            <optgroup label='Merah'>
+                <option value="">Merah Maroon</option>
+                <option value="">Merah Muda</option>
+                <option value="">Merah Jambu</option>
+            </optgroup>
+
+            <optgroup label='Hijau'>
+                <option value="">Hijau Daun</option>
+                <option value="">Hijau Tosca</option>
+            </optgroup>
+
+            <optgroup label='Hitam'>
+                <option value="">Hitam Pekat</option>
+                <option value="">Hitam Putih</option>
+            </optgroup>
+
+        </select>
+
+
+        <input type="radio" name="gender" > Pria
+        <input type="radio" name="gender" > Wanita
+
+        <input type="checkbox" name="skill" id=""> HTML
+        <input type="checkbox" name="skill" id=""> CSS
+        <input type="checkbox" name="skill" id=""> JAVASCRIPT
+
+
+
+
+
+
+    <div style='margin-top: 600px'>
+    </div>
+
+
+
+  </body>
+</html>
+
+<!-- shortcut -->
+<!-- 
+    copy paste: shift + alt + arrow bawah
+    cursors: alt + click area yang di inginkan
+    prettier: ctrl + a -> f1 -> muncul pop up, pilih format selection
+    change text: block text -> ctrl + d -> type new
+
+    pop-up box: f1 / ctrl + shift + p
+ -->

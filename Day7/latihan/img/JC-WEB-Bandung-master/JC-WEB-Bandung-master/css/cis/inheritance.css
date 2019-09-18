@@ -1,0 +1,11 @@
+.container {
+    color: red;
+    font-size: 30px;
+    border: 2px dotted cornflowerblue;
+    background-color: cadetblue
+}
+
+.container-child {
+    border: 2px solid coral;
+    background-color: burlywood
+}

@@ -1,0 +1,135 @@
+/* universal selector */
+/* Men selec semua tag html */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: grid;
+    width: 90%;
+    margin: 0 auto; /* top & bottom: 0, left & right: space yang tersisa di bagi dua. */
+
+    /* Menentukan banyak kolom dan lebar setiap kolom */
+    /* akan menghasilkan 3 kolom, masing2 400px */
+    /* grid-template-columns: 400px 400px 400px */
+
+    /* Memnetukan banyak kolom dan lebar dengan pola tertentu */
+    /* grid-template-columns: repeat(3, 200px) */
+
+    /* Setiap kolom akan mendapat bagian tertentu setelah di ketahuin nilai lebar per bagiannya */
+    grid-template-columns: 1fr 3fr 1fr;
+
+    /* Menentukan banyak baris dan lebar setiap barisnya */
+    /* akan menghasilkan 3 baris, pertama 130px, kedua 90px, ketiga 170px */
+    /* grid-template-rows: 130px 90px 170px; */
+
+    /* Menentukan tinggi baris */
+    /* grid-template-rows: 1fr 3fr 2fr; tentukan nilai tinggi dari container */
+
+    /* Menentukan tinggi dengan repeat */
+    /* grid-template-rows: repeat(3, 130px); */
+
+    /* Menentukan tinggi baris yang belum di definisikan */
+    grid-template-rows: 100px;
+
+    /* grid-auto-rows: 150px; */
+
+    /* minimal tinggi 150px, jika konten membutuhkan ruang lebih, akan di sesuaikan */
+    grid-auto-rows: minmax(150px, auto);
+
+    /* Membuat gap antar kolom */
+    /* column-gap: 10px; */
+
+    /* Membuat gap antar baris */
+    /* row-gap: 30px; */
+
+    /* row column */
+    gap: 20px 15px;
+
+    margin-bottom: 100px;
+}
+
+.item {
+    background-color: #58d5f6;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.item-2 {
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+    grid-row: 1 / 3;
+    grid-column: 2 / 3
+}
+
+.item-5 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.item-6 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.item:nth-child(even){
+    background-color: #236fc8
+}
+
+/* JUSTIFY & ALIGN CONTENT */
+/*  
+    Justify: horizontal
+    start: kiri,
+    end: kanan,
+    center,
+    space-around,
+    space-between,
+    space-evenly
+
+    Align: Vertical
+    start: atas,
+    end: bawah,
+    center,
+    space-around,
+    space-between,
+    space-evenly
+*/
+.content-container{
+    display: grid;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: aquamarine;
+
+    grid-template-columns: 80px 150px 80px;
+    grid-auto-rows: 80px;
+    gap: 10px; /* row dan column: 10px*/
+
+    /* justify-content: end;
+    align-content: end */
+
+    /* justify-content: center;
+    align-content: center */
+
+    /* justify-content: space-around;
+    align-content: space-around */
+
+    /* justify-content: space-between;
+    align-content: space-between; */
+
+    /* justify-content: space-evenly;
+    align-content: space-evenly */
+    
+}

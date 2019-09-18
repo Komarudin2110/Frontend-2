@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Akan menekan padding ke dalam */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    font-size: 1.5em;
+    display: grid;
+    grid-template-rows: 130px 800px 200px;
+}
+
+.navbar {
+    background: linear-gradient(
+        rgb(7,211,201),
+        rgb()
+    )
+}
+
+.content {
+    background-image: url(./pictures/black-background.jpg);
+    
+}

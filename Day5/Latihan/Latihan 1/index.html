@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Latihan #1</title>
+</head>
+
+<body>
+    <table id="table1">
+        <tr>
+            <th>Form Manusia</th>
+            <th>Form Hewan</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrapper">
+                    <form action="">
+                        <p>Nama <input type="text" name="Nama" id="nama"></p>
+                        <p>Umur <input type="number" min="1" max=<textarea rows="8" cols="64" id="umur"></p>
+                        <p>
+                            Kelamin <input type="radio" name="kelamin" id="kelamin" value="Pria">Pria
+                            <input type="radio" name="kelamin" id="kelamin" value="Wanita">Wanita
+                        </p>
+                        <p>
+                            Pekerjaan
+                            <select id="pekerjaan">
+                                <option value="Guru">Guru</option>
+                                <option value="Teknisi">Teknisi</option>
+                                <option value="Wiraswasta">Wiraswasta</option>
+                                <option value="Freelancer">Freelancer</option>
+                            </select>
+                        </p>
+                    </form>
+                    <input type="submit" value="Tambahkan" onclick="inputManusia()"></<input>
+                </div>
+            </td>
+            <td>
+                <div class="wrapper">
+                    <form action="">
+                        <p>Nama <input type="text" name="NamaHewan" id="nama-hewan"></p>
+                        <p>Umur <input type="number" min="1" max=<textarea rows="8" cols="64" id="umur-hewan"></p>
+                        <p>
+                            Kelamin <input type="radio" name="kelamin-hewan" id="kelamin-hewan" value="Jantan"> Jantan
+                            <input type="radio" name="kelamin-hewan" id="kelamin-hewan" value="Betina">Betina
+                        </p>
+                        <p>
+                            Status
+                            <input type="radio" name="status-hewan" id="status-hewan" value="Liar">Liar
+                            <input type="radio" name="status-hewan" id="status-hewan" value="Peliharaan">Peliharaan
+                        </p>
+                    </form>
+                    <input type="submit" value="Tambahkan" onclick="inputHewan()"></<input>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Data Manusia</th>
+            <th>Data Hewan</th>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="table-data">
+                    <thead>
+                        <th>Nama</th>
+                        <th>Umur</th>
+                        <th>Kelamin</th>
+                        <th>Pekerjaan</th>
+                    </thead>
+                    <tbody id='list-manusia'>
+                        <!-- list akan di render di sini -->
+
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="table-data">
+                    <thead>
+                        <th>Nama</th>
+                        <th>Umur</th>
+                        <th>Kelamin</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody id='list-hewan'>
+                        <!-- list akan di render di sini -->
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- JS Script -->
+    <script src="../Latihan 1/js/script.js"></script>
+</body>''
+
+</html>

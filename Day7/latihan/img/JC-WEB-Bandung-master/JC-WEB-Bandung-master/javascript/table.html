@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Table</title>
+
+        <!-- Menghubungkan file html dengan file javascript -->
+        <script defer src="table.js"></script>
+
+    </head>
+
+    <style>
+
+        /* Semua tag yang memiliki class wrapper */
+        .wrapper {
+            
+        }
+        
+        /* Tag div yang memiliki class wrapper */
+        div.wrapper {
+            margin: 13px;
+        }
+
+        /* Untuk tag table, th, dan td akan memiliki border */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            margin: 10px auto;
+        }
+
+        /* Tag table yang memiliki class table-wrap */
+        table.table-wrap {
+            margin-bottom: 20px;
+        }
+        
+        /* Tag table yang memiliki class table-data */
+        table.table-data {
+            margin: 15px;
+        }
+
+        th {
+            padding: 20px; 
+        }
+    
+    </style>
+
+
+    <body>
+        <h1 style="text-align: center">Table</h1>
+
+        <!-- Table Form -->
+        <table class="table-wrap">
+            <tr>
+                <th>Form Manusia</th>
+                <th>Form Hewan</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="wrapper">
+                        <form>
+                            <p>Nama: <input type='text' id='nama'></p>
+                            <p>Umur: <input type='number' id='umur'></p>
+                            <p>
+                                Jenis Kelamin:
+                                <input type='radio' name="gender" value='Pria' > Pria
+                                <input type='radio' name="gender" value='Wanita' > Wanita
+                            </p>
+                            <p>
+                                Pekerjaan:
+                                <select id='pekerjaan' >
+                                    <option value="ceo">CEO</option>
+                                    <option value="cto">CTO</option>
+                                    <option >PM</option>
+                                </select>
+                            </p>
+
+                            <!-- di click -> call function inputManusia -->
+                            <!-- onclick : event handler -->
+                            <input type='button' value="Tambahkan" onclick="inputManusia()">
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                    FORM UNTUK ISI DATA HEWAN
+                </td>
+            </tr>
+        </table>
+
+        <!-- Table List -->
+        <table>
+            <tr>
+                <th>Data Manusia</th>
+                <th>Data Hewan</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <table class="table-data">
+                        <thead>
+                            <th>Nama</th>
+                            <th>Umur</th>
+                            <th>Kelamin</th>
+                            <th>Pekerjaan</th>
+                        </thead>
+                        <tbody id='list-manusia'>
+                            <!-- list akan di render di sini -->
+                            
+                        </tbody>
+                    </table>
+                </td>
+
+                <td>
+                    DATA HEWAN
+                </td>
+            </tr>
+        </table>
+
+        <!-- 
+            <tr> : table row , untuk menentukan banyaknya baris
+            <td> : table data, untuk menentukan banyaknya kolom
+            <th> : table head, untuk memberikan style berbeda pada judul kolom
+         -->
+
+         <div style="margin-top:600px">
+        </div>
+    </body>
+</html>

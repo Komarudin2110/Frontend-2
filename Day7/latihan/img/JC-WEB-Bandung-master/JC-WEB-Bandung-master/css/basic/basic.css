@@ -1,0 +1,283 @@
+/* Selector */
+
+/* 
+    h2: selector
+    color: property
+    aquamarine: value
+*/
+
+
+/* Untuk semua tag h2 */
+h2 {
+    color: aquamarine;
+
+}
+
+/* Semua tag paragraf */
+p {
+    color: goldenrod
+}
+
+/* ID Selector */
+
+/* Tag yang memiliki id = merah */
+#merah {
+    color: red;
+}
+
+/* CLASS Selector */
+
+/* Tag yang memiliki class =  */
+.hijau {
+    color: green;
+}
+
+/* Attribute Selector */
+
+/* Tag yang memiliki attribute id */
+[id] {
+    color: #6423cc
+}
+
+/* Colors */
+
+/* keyword */
+#corn {
+    color: cornflowerblue;
+}
+
+/*
+    rgb, red green blue
+    range: 0 - 255
+*/
+#rgb {
+    color: rgb(224, 116, 116)
+}
+
+/* 
+    alpha: 0 - 1
+    0.3 , 0.4
+*/
+
+#rgba {
+    color: #3cc771dc
+}
+/*
+    Bilangan hexadecimal
+    0 - 9 A - F
+*/
+#hex {
+    color: #24913f
+}
+
+#hsl{
+    color: hsl(157, 89%, 28%)
+}
+
+#hsla{
+    color: rgb(145, 177, 30)
+}
+
+/* Background */
+
+/* Semua tag div yang ada di dalam div yang memiliki class box-container */
+div.box-container div{
+    width: 500px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    color: white;
+}
+
+.background-color{
+    background-color: purple
+}
+
+.background-image {
+    background-image: url(./files/pictures/logo-css-150x150.png);
+    background-color: #24913f;
+    background-repeat: no-repeat;
+    background-position: top/* top center */
+    /* background-position-x: right;
+    background-position-y: bottom; */
+
+    /* 
+        shorthand background-position menerima dua nilai antara : top / bottom dan left / right
+
+        Jika tidak hanya memberikan satu nilai, misalkan hanya memberi nilai untuk sumbu-x
+        maka posisi terhadap sumbu-y akan menjadi center
+    */
+
+    /* 
+        background-image akan ada di atas background color
+    */
+}
+
+.background-size {
+    background-image: url('./files/pictures/Logo-Css-720x720.png');
+    background-size: 500px 300px;
+
+    /* background-size: 500px width & height: 500px */
+    /* background-size: 500px 300px width 500 height 300 */
+
+    /* 
+        background-size dapat menerima satu atau dua value
+        
+        jika hanya menerima satu value, contoh :
+            background-size: 500px
+            Maka value tersebut akan digunakan untuk width & height
+
+        jika menerima dua values, contoh:
+            background-size: 500px 300px
+            Maka value 500px akan digunakan untuk width & 300px untuk height
+    */
+    
+    /* 
+        contain
+        Ukuran gambar di ubah sesuai dengan ukuran element
+        Bisa menyisakan sebuah space jika rasio gambar dengan element berbeda
+        Berpatokan nilai terkecil antara lebar atau tinggi
+    */
+    
+    
+    /* background-size: cover; */
+    /* 
+        cover
+        Ukuran gambar di sesuaikan dengan ukuran dari element
+        jika ratio gambar dan rasio element tidak sama
+        menyebabkan sebagian gambar terpotong
+        Berpatokan nilai terbesar antara lebar atau tinggi
+    */
+}
+
+.back-attach {
+    /* Background akan 'menempel' di belakang element
+        jika element di scroll ke atas atau ke bawah
+        background tidak akan ikut
+    */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.background-attachment-one {
+    background-image: url('./files/pictures/logo-css-300x300.png');
+}
+
+.background-attachment-two {
+    background-image: url('./files/pictures/kitty.jpg');
+}
+
+.background-shorthand {
+    background: url('./files/pictures/logo-css-150x150.png') center center fixed purple
+}
+
+
+/* Font */
+#font {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic; /* normal, oblique */
+    font-weight: bold;
+    text-decoration: underline; /* overline, line-through */
+    text-transform: capitalize; /* uppercase, lowercase */
+    text-align: center /* left, right */
+}
+
+.google-font {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+    background-color: #d3c8c8
+}
+
+#google-font-one {
+    font-family: Chilanka, cursive;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#google-font-two {
+    font-family: Pacifico, cursive;
+}
+
+/* Box model */
+.width-height {
+    width: 530px;
+    height: 330px;
+    background-color: coral
+}
+
+.padding {
+    background-color: aquamarine;
+    color: black;
+
+    padding: 20px 35px 55px 13px
+    /* padding-left: 13px;
+    padding-top: 20px;
+    padding-right: 35px;
+    padding-bottom: 55px; */
+
+    /* 
+        shorthand padding
+        
+        padding: 5px; semua sisi element
+
+        padding: 5px 10px; top & bottom : 5px , left & right : 10px
+
+        padding: 5px 10px 15px; top: 5px, left & right: 10px; bottom: 15px;
+
+        padding: 5px 10px 15px 20px; top - right - bottom - left
+
+    */
+}
+
+.margin {
+    width: 500px;
+    height: 200px;
+    background-color: deeppink;
+    margin : 20px;
+
+    /* 
+        shorthand margin
+        
+        margin: 5px; semua sisi element
+
+        margin: 5px 10px; top & bottom : 5px , left & right : 10px
+
+        margin: 5px 10px 15px; top: 5px, left & right: 10px; bottom: 15px;
+
+        margin: 5px 10px 15px 20px; top - right - bottom - left
+
+    */
+}
+
+/* .margin-one {
+    margin-bottom: 20px;
+}
+
+.margin-two {
+    margin-top: 50px;
+    margin-bottom: 30px
+} */
+
+.last {
+    width: 70%;
+    /* 70% dari lebar parent (body) */
+
+
+    height: 300px;
+    font-family: Chilanka, cursive;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: 30px;
+    margin: 2cm auto;
+    border: 10px dashed salmon;
+
+    /* border: weight style (solid, dotted, dashed) color */
+}
